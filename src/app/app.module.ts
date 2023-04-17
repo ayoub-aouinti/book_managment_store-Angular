@@ -4,12 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Buy_bookComponent } from './buy_book/buy_book.component';
+import { BuybookComponent } from './buybook/buybook.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
-      Buy_bookComponent
+    BuybookComponent
    ],
   imports: [
     BrowserModule,
