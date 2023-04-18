@@ -1,3 +1,40 @@
-<p>
-  buybook works!
-</p>
+<mat-card class="example-card">
+  <mat-card-content class="title">Buy Book</mat-card-content>
+
+<form class="example-form">
+<mat-form-field class="example-full-width" appearance="outline">
+  <mat-label>Student ID</mat-label>
+  <input matInput>
+</mat-form-field>
+<mat-form-field class="example-full-width" appearance="outline">
+  <mat-label>Student Name</mat-label>
+  <input matInput>
+</mat-form-field>
+<mat-form-field class="example-full-width" appearance="outline">
+  <mat-label>From date</mat-label>
+  <input matInput [matDatepicker]="picker">
+  <mat-hint>MM/DD/YYYY</mat-hint>
+  <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+<mat-form-field class="example-full-width" appearance="outline">
+  <mat-label>Book Name</mat-label>
+  <input matInput>
+</mat-form-field>
+<mat-form-field class="example-full-width" appearance="outline">
+  <mat-label>Select</mat-label>
+  <mat-select>
+    <mat-option value="one">Fantasy</mat-option>
+    <mat-option value="two">Sci-Fi</mat-option>
+    <mat-option value="three">Thriller</mat-option>
+    <mat-option value="four">Romance</mat-option>
+    <mat-option value="five">Westerns</mat-option>
+    <mat-option value="six">Dystopian</mat-option>
+    <mat-option value="seven">Mystery</mat-option>
+    <mat-option value="eight">Biography</mat-option>
+    <mat-option value="nine">Drama</mat-option>
+    <mat-option value="ten">Advanture</mat-option>
+  </mat-select>
+</mat-form-field>
+</form>
+</mat-card>
