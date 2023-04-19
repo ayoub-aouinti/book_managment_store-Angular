@@ -22,16 +22,16 @@ export class ApiService {
 
   //delete book
   delete(id:number){
-    return this.http.get<bookmodel>("https://localhost:3000/posts"+id);
+    return this.http.get<bookmodel>("https://localhost:3000/posts/"+id);
   }
 
   //fetch data
   fetchdata(id:number){
-    return this.http.get<bookmodel>("https://localhost:3000/posts"+id);
+    return this.http.get<bookmodel>("https://localhost:3000/posts/"+id);
   }
 
   //update data
   update(data:bookmodel,id:number){
-    return this.http.put<bookmodel>("https://localhost:3000/posts"+id,data);
+    return this.http.put<bookmodel>("https://localhost:3000/posts/"+id,data);
   }
 }

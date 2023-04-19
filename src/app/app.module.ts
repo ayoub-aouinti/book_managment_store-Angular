@@ -10,6 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -38,8 +39,9 @@ import { ViewbookComponent } from './viewbook/viewbook.component';
     HttpClientModule,
     FormsModule,
     ToastrModule.forRoot({
-      priventDuplicates:true
-    })
+      preventDuplicates:true
+    }),
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
