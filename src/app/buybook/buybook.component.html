@@ -12,7 +12,7 @@
 </mat-form-field>
 <mat-form-field class="example-full-width" appearance="outline">
   <mat-label>From date</mat-label>
-  <input matInput name="formdate" [(ngModel)]="book.formdate" [matDatepicker]="picker">
+  <input matInput name="formdate" [(ngModel)]="book.fromdate" [matDatepicker]="picker">
   <mat-hint>MM/DD/YYYY</mat-hint>
   <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
   <mat-datepicker #picker></mat-datepicker>
@@ -24,21 +24,21 @@
 <mat-form-field class="example-full-width" appearance="outline">
   <mat-label>Select</mat-label>
   <mat-select name="genre" [(ngModel)]="book.genre">
-    <mat-option value="one">Fantasy</mat-option>
-    <mat-option value="two">Sci-Fi</mat-option>
-    <mat-option value="three">Thriller</mat-option>
-    <mat-option value="four">Romance</mat-option>
-    <mat-option value="five">Westerns</mat-option>
-    <mat-option value="six">Dystopian</mat-option>
-    <mat-option value="seven">Mystery</mat-option>
-    <mat-option value="eight">Biography</mat-option>
-    <mat-option value="nine">Drama</mat-option>
-    <mat-option value="ten">Advanture</mat-option>
+    <mat-option value="Fantasy">Fantasy</mat-option>
+    <mat-option value="Sci-Fi">Sci-Fi</mat-option>
+    <mat-option value="Thriller">Thriller</mat-option>
+    <mat-option value="Romance">Romance</mat-option>
+    <mat-option value="Westerns">Westerns</mat-option>
+    <mat-option value="Dystopian">Dystopian</mat-option>
+    <mat-option value="Mystery">Mystery</mat-option>
+    <mat-option value="Biography">Biography</mat-option>
+    <mat-option value="Drama">Drama</mat-option>
+    <mat-option value="Advanture">Advanture</mat-option>
   </mat-select>
 </mat-form-field>
 </form>
 <div class="btn">
-  <button mat-raised-button color="primary">Buy</button>&nbsp;&nbsp;
+  <button mat-raised-button color="primary" onclick="apply()">Buy</button>&nbsp;&nbsp;
   <button routerLink="/viewbook" mat-raised-button color="accent">View</button>
 </div>
 </mat-card>

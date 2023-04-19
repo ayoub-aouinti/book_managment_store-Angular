@@ -7,6 +7,9 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -31,7 +34,12 @@ import { ViewbookComponent } from './viewbook/viewbook.component';
     MatDatepickerModule,
     MatNativeDateModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule,
+    FormsModule,
+    ToastrModule.forRoot({
+      priventDuplicates:true
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
