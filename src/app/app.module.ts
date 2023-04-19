@@ -6,16 +6,20 @@ import {MatInputModule} from '@angular/material/input';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
+import {MatButtonModule} from '@angular/material/button';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BuybookComponent } from './buybook/buybook.component';
+import { ViewbookComponent } from './viewbook/viewbook.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BuybookComponent
+    BuybookComponent,
+      ViewbookComponent
    ],
   imports: [
     BrowserModule,
@@ -26,7 +30,8 @@ import { BuybookComponent } from './buybook/buybook.component';
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatSelectModule
+    MatSelectModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

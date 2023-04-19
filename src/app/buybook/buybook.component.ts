@@ -12,4 +12,7 @@ export class BuybookComponent implements OnInit {
   ngOnInit() {
   }
 
+  apply(){
+    
+  }
 }
