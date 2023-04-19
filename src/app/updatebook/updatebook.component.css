@@ -1,0 +1,24 @@
+.example-card{
+  width: 40%;
+  margin-top: 15px;
+  margin-left: 350px;
+}
+.title{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+.example-form {
+  margin-top: 30px;
+  margin-left: 50px;
+  }
+
+.example-full-width {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.btn{
+  margin-left: 45px;
+}

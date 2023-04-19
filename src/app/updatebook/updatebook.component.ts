@@ -1,15 +1,15 @@
-import { bookmodel } from './../bookmodel';
+import { bookmodel } from '../bookmodel';
 import { Component, OnInit } from '@angular/core';
-import { Params, Router } from '@angular/router';
+import { Params, Router, ActivatedRoute } from '@angular/router';
 import { ApiService } from '../service/api.service';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
-  selector: 'app-buybook',
-  templateUrl: './buybook.component.html',
-  styleUrls: ['./buybook.component.css']
+  selector: 'app-updatebook',
+  templateUrl: './updatebook.component.html',
+  styleUrls: ['./updatebook.component.css']
 })
-export class BuybookComponent implements OnInit {
+export class UpdatebookComponent implements OnInit {
   public dateid:any;
   public book:bookmodel = {} as bookmodel
   activateroute: any;
@@ -25,10 +25,10 @@ export class BuybookComponent implements OnInit {
     })
   }
 
-  apply(){
-    this.api.buybook(this.book).subscribe((res)=>{
-      this.toastr.success("book bougth sucessfully!!!");
-      this.router.navigate(['viewbook'])
+  updatedata(){
+    this.api.update(this.book,this.dateid).subscribe((data:any)=>{
+      this.toastr.success("book updated sucessfully!!!");
+      this.router.navigate(['/viewbook'])
     })
   }
 }

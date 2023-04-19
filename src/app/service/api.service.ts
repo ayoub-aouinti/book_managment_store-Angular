@@ -16,7 +16,7 @@ export class ApiService {
   }
 
   //viewing book
-  viewbook(data:bookmodel){
+  viewbook(){
     return this.http.get<bookmodel>("https://localhost:3000/posts");
   }
 
